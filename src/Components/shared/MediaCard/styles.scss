@@ -1,0 +1,22 @@
+.mediaCard{
+    transition: all ease 0.4s;
+    &:hover {
+        // box-shadow: rgb(163, 163, 163) 0 0 2px;
+        // width: 65% !important;
+        // transform: scale(1.03);
+        transition: all ease 0.4s;
+        .mediaContainer {
+
+        }
+        .dataContainer {
+            transition: all ease 0.4s;
+            background: rgb(208, 208, 241);
+        }
+    }
+    .mediaContainer {
+        // transition: all ease 0.4s;        
+    }
+    .dataContainer {
+        transition: all ease 0.4s;
+    }
+}

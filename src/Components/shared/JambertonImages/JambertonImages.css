@@ -1,0 +1,134 @@
+.JambertonImages_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.JambertonImages_blackBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0, 0.5)
+}
+
+.JambertonImages_background_img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.JambertonImagesText {
+    color: white;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+h3.JambertonImagesText {
+    font-weight: 200;
+}
+
+h2.JambertonImagesText {
+    color: white;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+    h2.JambertonImagesText {
+        white-space: normal;
+    }
+
+}
+
+
+
+.JambertonImagesLeft h2.JambertonImagesText {
+        margin-top: 10%;
+        margin-left: 5%;
+}
+.JambertonImagesLeft h3.JambertonImagesText {
+        margin-top: 20px;
+        margin-left: 5%;
+}
+
+.JambertonImagesLeft,
+.JambertonImagesRight {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    z-index: 3;
+    top: 0;
+    visibility: visible;
+}
+
+.JambertonImagesLeft {
+    left: 0;
+}
+
+.JambertonImagesRight {
+    right: 0;
+}
+
+
+.JambertonImagesRightLeft {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+
+@media screen and (max-width: 800px) {
+    .JambertonImages {
+        height: auto !important;
+        /* border: blue solid 1px; */
+        margin: 0 !important;
+        position: relative;
+        top: none;
+        left: none;
+        display: block;
+    }
+
+    .JambertonImagesRightLeft {
+        height: auto;
+    }
+
+    .JambertonImagesLeft,
+    .JambertonImagesRight {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+        top: none;
+        left: none;
+        visibility: visible;
+        /* border: yellow solid 1px; */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .JambertonImagesLeft img,
+    .JambertonImagesRight img {
+        position: relative;
+    }
+
+    h2.JambertonImagesText {
+        margin-top: 0 !important; 
+        position: relative;
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,26 @@
+$gridUnit: 100% / 12;
+
+.mainCenterContainer {
+    // background: rgb(247, 247, 251);
+    background: rgb(224, 224, 224);
+    width: 100%;
+    height: 100%;
+    padding-top: 55px;
+    padding-bottom: 30px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.mainCenterContainer_backgroundContainer {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.mainCenterContainer_background {
+    background: rgb(241, 241, 241);
+}

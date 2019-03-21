@@ -1,28 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch } from "react-router-dom";
+import { connect } from 'react-redux'
+import createLayoutRoute from "./Components/shared/LayoutRoute/hoc";
+
+import MainLayout from './Components/Main/Layout';
+
+import 'react-typist/dist/Typist.css';
+import './App.scss';
+
+import Home from "./Components/Main/Home";
+
+import getMainGithubLinks from './actions/Main/GithubLinks/fetch'
+
+const MainLayoutRoute = createLayoutRoute(MainLayout);
+
+// import { bindActionCreaors } from 'redux'
+
 
 class App extends Component {
+
+  componentWillMount() {
+    setTimeout(() => {
+      this.props.dispatch(getMainGithubLinks())
+    }, 3000);
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Switch>
+        <MainLayoutRoute exact path="/" component={Home} />
+      </Switch>
     );
   }
 }
 
-export default App;
+export default connect()(App);

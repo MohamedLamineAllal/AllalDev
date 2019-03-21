@@ -1,0 +1,2 @@
+fix simple no sticky library for this use case
+===> use the same event Waypoint and turn the display to fixed, and position it from the top of the window! cool and at out simple you let it get back

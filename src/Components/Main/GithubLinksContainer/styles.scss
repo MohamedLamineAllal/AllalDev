@@ -1,0 +1,20 @@
+.mainGithubLinksContainer {
+    // padding-top: 50px;
+    .mainGithubLink {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+        &:hover {
+            
+        }
+    }
+
+    .microlink_card {
+        max-width: none !important;
+        width: 70% !important;
+        text-decoration: none !important;
+        border: 1px solid #dbdbdb;
+        margin-bottom: 10px;
+    }
+}
